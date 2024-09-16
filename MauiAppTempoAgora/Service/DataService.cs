@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using MauiAppTempoAgora.Models;
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
+using Newtonsoft.Json;
 
 namespace MauiAppTempoAgora.Service
 {
     public class DataService
     {
-        public static async Task<Tempo?> GetPrevisaoDoTempo(string idade)
+        public static async Task<Tempo?> GetPrevisaoDoTempo(string cidade)
         {
             string appId = "6135072afe7f6cec1537d5b08a5a1a2";
 
